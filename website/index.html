@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poke Robot — The Robot That Belongs at Home</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-text">POKE ROBOT</span>
+      </a>
+      <div class="nav-links">
+        <a href="#vision" data-i18n="nav.vision">Vision</a>
+        <a href="#film" data-i18n="nav.film">Film</a>
+        <a href="#join" data-i18n="nav.join">Join Us</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">中</button>
+      </div>
+      <div class="nav-right-mobile">
+        <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">中</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#vision" data-i18n="nav.vision">Vision</a>
+      <a href="#film" data-i18n="nav.film">Film</a>
+      <a href="#join" data-i18n="nav.join">Join Us</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-effects">
+      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero.badge">Something big is coming</span>
+        </div>
+        <h1 class="hero-title" data-i18n-html="hero.title">
+          Not a machine. <span class="hero-highlight">A companion that works.</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          We're building the home robot you've always imagined — one that 
+          understands, helps, and belongs in your family.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#film" class="btn btn-primary" data-i18n="hero.cta1">Watch Our Story</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-blueprint">
+          <!-- Robot rendering placeholder -->
+          <svg class="blueprint-robot" viewBox="0 0 400 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grid lines -->
+            <line x1="0" y1="130" x2="400" y2="130" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
+            <line x1="0" y1="260" x2="400" y2="260" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
+            <line x1="0" y1="390" x2="400" y2="390" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
+            <line x1="130" y1="0" x2="130" y2="520" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
+            <line x1="270" y1="0" x2="270" y2="520" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
+            <!-- Head -->
+            <ellipse cx="200" cy="85" rx="60" ry="65" stroke="currentColor" stroke-opacity="0.25" stroke-width="1.5"/>
+            <ellipse cx="200" cy="85" rx="55" ry="60" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
+            <!-- Eyes -->
+            <circle cx="180" cy="78" r="8" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
+            <circle cx="220" cy="78" r="8" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
+            <circle cx="180" cy="78" r="3" fill="currentColor" fill-opacity="0.15"/>
+            <circle cx="220" cy="78" r="3" fill="currentColor" fill-opacity="0.15"/>
+            <!-- Mouth -->
+            <path d="M188 100 Q200 112 212 100" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+            <!-- Neck -->
+            <rect x="188" y="148" width="24" height="20" rx="4" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
+            <!-- Body / Torso -->
+            <path d="M145 168 L145 320 Q145 340 165 340 L235 340 Q255 340 255 320 L255 168 Q255 155 240 155 L160 155 Q145 155 145 168Z" stroke="currentColor" stroke-opacity="0.25" stroke-width="1.5" fill="currentColor" fill-opacity="0.02"/>
+            <!-- Chest detail -->
+            <circle cx="200" cy="220" r="22" stroke="currentColor" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 3"/>
+            <circle cx="200" cy="220" r="10" stroke="currentColor" stroke-opacity="0.18" stroke-width="1"/>
+            <circle cx="200" cy="220" r="4" fill="currentColor" fill-opacity="0.1"/>
+            <!-- Left arm -->
+            <path d="M145 175 L110 180 Q95 182 90 196 L78 260 Q75 272 82 280 L95 290" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+            <circle cx="95" cy="292" r="10" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
+            <!-- Right arm -->
+            <path d="M255 175 L290 180 Q305 182 310 196 L322 260 Q325 272 318 280 L305 290" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+            <circle cx="305" cy="292" r="10" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
+            <!-- Left leg -->
+            <path d="M170 340 L165 420 Q163 435 170 445 L172 470" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+            <ellipse cx="172" cy="478" rx="18" ry="8" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
+            <!-- Right leg -->
+            <path d="M230 340 L235 420 Q237 435 230 445 L228 470" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
+            <ellipse cx="228" cy="478" rx="18" ry="8" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
+            <!-- Dimension annotations -->
+            <line x1="55" y1="20" x2="55" y2="490" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+            <line x1="50" y1="20" x2="60" y2="20" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+            <line x1="50" y1="490" x2="60" y2="490" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+            <text x="48" y="258" fill="currentColor" fill-opacity="0.12" font-size="9" text-anchor="end" font-family="monospace">1650mm</text>
+            <line x1="130" y1="505" x2="270" y2="505" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+            <line x1="130" y1="500" x2="130" y2="510" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+            <line x1="270" y1="500" x2="270" y2="510" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
+            <text x="200" y="518" fill="currentColor" fill-opacity="0.12" font-size="9" text-anchor="middle" font-family="monospace">450mm</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Event Banner -->
+  <section class="event-banner">
+    <div class="container">
+      <div class="event-content">
+        <div class="event-label" data-i18n="event.label">Upcoming</div>
+        <h2 class="event-title" data-i18n="event.title">Our founder's film drops soon.</h2>
+        <p class="event-desc" data-i18n="event.desc">A story about why we left comfortable careers to build something that matters. Stay tuned.</p>
+        <div class="event-date" data-i18n="event.date">Spring 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="vision" id="vision">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="vision.label">Our Belief</span>
+        <h2 class="section-title" data-i18n-html="vision.title">The iPhone moment<br>for robotics.</h2>
+        <p class="section-subtitle" data-i18n="vision.subtitle">
+          Every great product category has a moment when it stops being a novelty 
+          and becomes a necessity. For home robots, that moment hasn't arrived — yet.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-number">01</div>
+          <h3 class="value-title" data-i18n="vision.v1.title">Form is intention</h3>
+          <p class="value-desc" data-i18n="vision.v1.desc">
+            We chose a humanoid form — not to impress, but because a home 
+            deserves a presence, not a appliance. If it looks like a being, 
+            it carries emotional meaning.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-number">02</div>
+          <h3 class="value-title" data-i18n="vision.v2.title">Utility is respect</h3>
+          <p class="value-desc" data-i18n="vision.v2.desc">
+            Real tasks, real help. No choreographed demos, no scripted 
+            performances. A robot that works is a robot that respects 
+            your time and intelligence.
+          </p>
+        </div>
+        <div class="value-card">
+          <div class="value-number">03</div>
+          <h3 class="value-title" data-i18n="vision.v3.title">Personality is connection</h3>
+          <p class="value-desc" data-i18n="vision.v3.desc">
+            Simulated personality isn't deception — it's the bridge that 
+            lets humans and robots coexist naturally. Warmth isn't a feature. 
+            It's a design principle.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <section class="manifesto">
+    <div class="container">
+      <blockquote class="manifesto-quote" data-i18n-html="manifesto.quote">
+        "We don't build robots that perform.<br>
+         We build robots that <em>belong</em>."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Film / Video Section -->
+  <section class="film" id="film">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="film.label">Our Story</span>
+        <h2 class="section-title" data-i18n-html="film.title">Built in public,<br>from day one.</h2>
+        <p class="section-subtitle" data-i18n="film.subtitle">
+          Follow our founder's journey as we define the next generation 
+          of home robotics — openly, honestly, with nothing to hide.
+        </p>
+      </div>
+      <div class="video-placeholder">
+        <div class="video-inner">
+          <div class="play-button">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <p class="video-coming" data-i18n="film.coming">Video coming Spring 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Us -->
+  <section class="join" id="join">
+    <div class="container">
+      <div class="join-layout">
+        <div class="join-text">
+          <span class="section-label" data-i18n="join.label">Join Us</span>
+          <h2 class="section-title" data-i18n-html="join.title">Build the future<br>with us.</h2>
+          <p class="section-subtitle" data-i18n="join.subtitle">
+            We're a small team of engineers and dreamers. We need people who 
+            believe a robot can be more than a gadget — people who want to 
+            give machines a soul.
+          </p>
+        </div>
+        <div class="join-roles">
+          <div class="role-card">
+            <h3 data-i18n="join.r1.title">Industrial Designer</h3>
+            <p data-i18n="join.r1.desc">Shape the physical form of our robot. You'll define how technology feels when it enters a home.</p>
+            <span class="role-tag" data-i18n="join.hiring">Actively Hiring</span>
+          </div>
+          <div class="role-card">
+            <h3 data-i18n="join.r2.title">Product Designer</h3>
+            <p data-i18n="join.r2.desc">Help define what our robot does and how people interact with it. Bridge engineering and humanity.</p>
+            <span class="role-tag" data-i18n="join.hiring">Actively Hiring</span>
+          </div>
+          <div class="role-card">
+            <h3 data-i18n="join.r3.title">AI / Robotics Engineer</h3>
+            <p data-i18n="join.r3.desc">Push the boundaries of what's possible. Make the robot see, think, and act in the real world.</p>
+            <span class="role-tag" data-i18n="join.open">Open</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info">
+          <span class="section-label" data-i18n="contact.label">Get In Touch</span>
+          <h2 class="section-title" data-i18n="contact.title">Let's talk.</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">
+            Whether you want to join us, collaborate, or simply say hi — 
+            we'd love to hear from you.
+          </p>
+          <div class="contact-methods">
+            <div class="contact-item">
+              <span class="contact-label" data-i18n="contact.email">Email</span>
+              <a href="mailto:hello@pokerobot.com">hello@pokerobot.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label" data-i18n="contact.wechat">WeChat Official</span>
+              <span data-i18n="contact.soon">Coming soon</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label" data-i18n="contact.location">Location</span>
+              <span data-i18n="contact.locationVal">China</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" data-i18n="form.name">Name</label>
+              <input type="text" id="name" name="name" required data-i18n-placeholder="form.namePh" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form.email">Email</label>
+              <input type="email" id="email" name="email" required data-i18n-placeholder="form.emailPh" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="interest" data-i18n="form.interest">I'm interested in...</label>
+              <select id="interest" name="interest">
+                <option value="general" data-i18n="form.opt1">General inquiry</option>
+                <option value="join" data-i18n="form.opt2">Joining the team</option>
+                <option value="collaborate" data-i18n="form.opt3">Collaboration</option>
+                <option value="invest" data-i18n="form.opt4">Investment</option>
+                <option value="media" data-i18n="form.opt5">Media / Press</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form.message">Message</label>
+              <textarea id="message" name="message" rows="4" data-i18n-placeholder="form.messagePh" placeholder="Tell us what's on your mind..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">POKE ROBOT</span>
+          <p>&copy; 2026 Poke Robot. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        </div>
+        <div class="footer-links">
+          <a href="#vision" data-i18n="nav.vision">Vision</a>
+          <a href="#film" data-i18n="footer.story">Our Story</a>
+          <a href="#join" data-i18n="footer.careers">Careers</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/i18n.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
