@@ -8,7 +8,6 @@ const translations = {
     'nav.film': 'Film',
     'nav.join': 'Join Us',
     'nav.contact': 'Contact',
-    'hero.badge': 'Something big is coming',
     'hero.title': 'Not a machine. <span class="hero-highlight">A companion that works.</span>',
     'hero.subtitle': "We're building the home robot you've always imagined — one that understands, helps, and belongs in your family.",
     'hero.cta1': 'Watch Our Story',
@@ -74,32 +73,31 @@ const translations = {
     'nav.film': '影片',
     'nav.join': '加入我们',
     'nav.contact': '联系',
-    'hero.badge': '有大事要发生',
-    'hero.title': '不是机器，<span class="hero-highlight">是能干活的家人。</span>',
-    'hero.subtitle': '我们正在打造你一直想象中的家庭机器人——它理解你、帮助你，属于你的家。',
-    'hero.cta1': '观看我们的故事',
+    'hero.title': '<span class="hero-highlight">是家人，</span>不是机器。',
+    'hero.subtitle': '我们正在打造你理想中的家庭机器人 <br>他理解你、帮助你，属于你的家。',
+    'hero.cta1': '了解破壳',
     'hero.cta2': '了解更多',
     'hero.scroll': '下滑',
     'event.label': '即将发布',
-    'event.title': '创始人的故事短片即将上线。',
-    'event.desc': '一个关于我们为什么离开舒适的工作、去做一件真正重要的事的故事。敬请期待。',
+    'event.title': '创始人故事',
+    'event.desc': '一个关于我为什么离要创立破壳的故事。敬请期待。',
     'event.date': '2026 年春',
     'vision.label': '我们的信念',
-    'vision.title': '机器人行业的<br>iPhone 时刻。',
-    'vision.subtitle': '每一个伟大的产品品类，都有一个从新奇变为必需的时刻。对于家庭机器人，这个时刻还没有到来——但快了。',
+    'vision.title': '机器人终将走入千家万户。',
+    'vision.subtitle': '人形、能力与人格，将共同定义家庭机器人的未来。',
     'vision.v1.title': '形态即态度',
-    'vision.v1.desc': '我们选择类人外形，不是为了炫技，而是因为家需要的是一个「人」，不是一台机器。如果它长得像生物，那它就承载了情绪意义。',
+    'vision.v1.desc': '选择类人形，不是为了单纯更“像人”，是因为回到家后，我们更需要的是一位“伙伴”，而不是一台冰冷冷的机器。',
     'vision.v2.title': '能力即尊重',
-    'vision.v2.desc': '真实的任务，真实的帮助。没有编排好的演示，没有写好剧本的表演。一个能干活的机器人，才是对你时间和智商的尊重。',
-    'vision.v3.title': '人格即连接',
-    'vision.v3.desc': '模拟人格不是欺骗——它是让人和机器人自然相处的桥梁。温暖不是一个功能，是一个设计原则。',
-    'manifesto.quote': '「我们不造表演的机器人，<br>我们造<em>属于家的</em>机器人。」',
+    'vision.v2.desc': '机器人最终要面对的，是现实世界里的家务和工作。真实的行为能力，比任何精心设计的演示都更重要。',
+    'vision.v3.title': '人格即链接',
+    'vision.v3.desc': '机器人“人格化”不是一种噱头，它是帮助人与机器人自然相处的一种不可或缺的独特能力。',
+    'manifesto.quote': '「我们不制造表演机器，<br>我们创造<em>属于你的</em>家庭机器人。」',
     'film.label': '我们的故事',
     'film.title': '从第一天起，<br>公开构建。',
     'film.subtitle': '跟随我们创始人的脚步，见证下一代家庭机器人的诞生——公开、真诚、毫无保留。',
     'film.coming': '视频即将于 2026 年春上线',
     'join.label': '加入我们',
-    'join.title': '和我们一起，<br>建造未来。',
+    'join.title': '和我们一起，<br>创造未来。',
     'join.subtitle': '我们是一支小而精的工程师和梦想家团队。我们需要相信机器人不只是一个设备的人——愿意赋予机器灵魂的人。',
     'join.r1.title': '工业设计师',
     'join.r1.desc': '定义我们机器人的物理形态。你将决定当科技走进家庭时，它给人什么样的感受。',
@@ -137,7 +135,7 @@ const translations = {
   }
 };
 
-let currentLang = 'en';
+let currentLang = 'zh';
 
 function setLang(lang) {
   currentLang = lang;
@@ -180,3 +178,6 @@ function setLang(lang) {
 function toggleLang() {
   setLang(currentLang === 'en' ? 'zh' : 'en');
 }
+
+// Initialize with default language
+setLang(currentLang);
