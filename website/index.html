@@ -3,26 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poke Robot — The Robot That Belongs at Home</title>
+  <title>Poke Robotics — The Robot That Belongs at Home</title>
+  <link rel="icon" type="image/svg+xml" href="assets/pokeicon.svg">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navigation -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="assets/pokelogonew.svg" alt="Poke Robot" class="logo-img">
+        <img src="assets/pokelogonew.svg" alt="Poke Robotics" class="logo-img logo-full">
+        <img src="assets/pokelogo2line.svg" alt="Poke Robotics" class="logo-img logo-icon">
       </a>
       <div class="nav-links">
         <a href="#join" data-i18n="nav.join">Join Us</a>
-        <a href="mailto:hello@pokerobot.com" class="nav-cta" data-i18n="nav.contact">Contact</a>
-        <button class="lang-toggle" id="langToggle" aria-label="Switch language">中</button>
+        <a href="#" class="contact-link" data-i18n="nav.contact">Contact</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-dropdown-btn" aria-label="Switch language">
+            <span class="lang-current">中文</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown-menu">
+            <button class="lang-option" data-lang="zh">中文</button>
+            <button class="lang-option" data-lang="en">English</button>
+          </div>
+        </div>
       </div>
       <div class="nav-right-mobile">
-        <button class="lang-toggle" id="langToggleMobile" aria-label="Switch language">中</button>
+        <div class="lang-dropdown" id="langDropdownMobile">
+          <button class="lang-dropdown-btn" aria-label="Switch language">
+            <span class="lang-current">中文</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown-menu">
+            <button class="lang-option" data-lang="zh">中文</button>
+            <button class="lang-option" data-lang="en">English</button>
+          </div>
+        </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
@@ -30,84 +50,38 @@
     </div>
     <!-- Mobile menu -->
     <div class="nav-mobile" id="navMobile">
-      <a href="#join" data-i18n="nav.join">Join Us</a>
-      <a href="mailto:hello@pokerobot.com" data-i18n="nav.contact">Contact</a>
+      <div class="nav-mobile-items">
+        <a href="#vision" class="nav-mobile-link">
+          <span class="nav-mobile-num">01</span>
+          <span class="nav-mobile-text" data-i18n="nav.join">Join Us</span>
+        </a>
+        <a href="#" class="nav-mobile-link contact-link">
+          <span class="nav-mobile-num">02</span>
+          <span class="nav-mobile-text" data-i18n="nav.contact">Contact</span>
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-bg-effects">
-      <div class="hero-glow"></div>
-      <div class="hero-grid"></div>
+    <div class="hero-bg">
+      <img src="assets/bg.png" alt="" class="hero-bg-img hero-bg-desktop">
+      <img src="assets/bgmobile.png" alt="" class="hero-bg-img hero-bg-mobile">
     </div>
     <div class="container hero-content">
-      <div class="hero-left">
-        <h1 class="hero-title" data-i18n-html="hero.title">
-          Not a machine. <span class="hero-highlight">A companion that works.</span>
-        </h1>
-        <p class="hero-subtitle" data-i18n-html="hero.subtitle">
-          We're building the home robot you've always imagined — one that 
-          understands, helps, and belongs in your family.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#film" class="btn btn-primary">
-            <svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M8 5v14l11-7z"/></svg>
-            <span data-i18n="hero.cta1">Watch Our Story</span>
-          </a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-blueprint">
-          <!-- Robot rendering placeholder -->
-          <svg class="blueprint-robot" viewBox="0 0 400 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Grid lines -->
-            <line x1="0" y1="130" x2="400" y2="130" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
-            <line x1="0" y1="260" x2="400" y2="260" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
-            <line x1="0" y1="390" x2="400" y2="390" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
-            <line x1="130" y1="0" x2="130" y2="520" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
-            <line x1="270" y1="0" x2="270" y2="520" stroke="currentColor" stroke-opacity="0.08" stroke-dasharray="4 4"/>
-            <!-- Head -->
-            <ellipse cx="200" cy="85" rx="60" ry="65" stroke="currentColor" stroke-opacity="0.25" stroke-width="1.5"/>
-            <ellipse cx="200" cy="85" rx="55" ry="60" stroke="currentColor" stroke-opacity="0.08" stroke-width="1"/>
-            <!-- Eyes -->
-            <circle cx="180" cy="78" r="8" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
-            <circle cx="220" cy="78" r="8" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
-            <circle cx="180" cy="78" r="3" fill="currentColor" fill-opacity="0.15"/>
-            <circle cx="220" cy="78" r="3" fill="currentColor" fill-opacity="0.15"/>
-            <!-- Mouth -->
-            <path d="M188 100 Q200 112 212 100" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
-            <!-- Neck -->
-            <rect x="188" y="148" width="24" height="20" rx="4" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
-            <!-- Body / Torso -->
-            <path d="M145 168 L145 320 Q145 340 165 340 L235 340 Q255 340 255 320 L255 168 Q255 155 240 155 L160 155 Q145 155 145 168Z" stroke="currentColor" stroke-opacity="0.25" stroke-width="1.5" fill="currentColor" fill-opacity="0.02"/>
-            <!-- Chest detail -->
-            <circle cx="200" cy="220" r="22" stroke="currentColor" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 3"/>
-            <circle cx="200" cy="220" r="10" stroke="currentColor" stroke-opacity="0.18" stroke-width="1"/>
-            <circle cx="200" cy="220" r="4" fill="currentColor" fill-opacity="0.1"/>
-            <!-- Left arm -->
-            <path d="M145 175 L110 180 Q95 182 90 196 L78 260 Q75 272 82 280 L95 290" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
-            <circle cx="95" cy="292" r="10" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
-            <!-- Right arm -->
-            <path d="M255 175 L290 180 Q305 182 310 196 L322 260 Q325 272 318 280 L305 290" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
-            <circle cx="305" cy="292" r="10" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
-            <!-- Left leg -->
-            <path d="M170 340 L165 420 Q163 435 170 445 L172 470" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
-            <ellipse cx="172" cy="478" rx="18" ry="8" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
-            <!-- Right leg -->
-            <path d="M230 340 L235 420 Q237 435 230 445 L228 470" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" fill="none"/>
-            <ellipse cx="228" cy="478" rx="18" ry="8" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"/>
-            <!-- Dimension annotations -->
-            <line x1="55" y1="20" x2="55" y2="490" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
-            <line x1="50" y1="20" x2="60" y2="20" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
-            <line x1="50" y1="490" x2="60" y2="490" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
-            <text x="48" y="258" fill="currentColor" fill-opacity="0.12" font-size="9" text-anchor="end" font-family="monospace">1650mm</text>
-            <line x1="130" y1="505" x2="270" y2="505" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
-            <line x1="130" y1="500" x2="130" y2="510" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
-            <line x1="270" y1="500" x2="270" y2="510" stroke="currentColor" stroke-opacity="0.1" stroke-width="0.5"/>
-            <text x="200" y="518" fill="currentColor" fill-opacity="0.12" font-size="9" text-anchor="middle" font-family="monospace">450mm</text>
-          </svg>
-        </div>
+      <h1 class="hero-title" data-i18n-html="hero.title">
+        Not a machine. <span class="hero-highlight">A companion that works.</span>
+      </h1>
+      <p class="hero-subtitle" data-i18n-html="hero.subtitle">
+        We're building the home robot you've always imagined — one that 
+        understands, helps, and belongs in your family.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#" class="btn btn-primary" id="videoBtn">
+          <svg class="btn-play-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M8 5v14l11-7z"/></svg>
+          <span data-i18n="hero.cta1">Watch Our Story</span>
+        </a>
       </div>
     </div>
   </section>
@@ -158,7 +132,9 @@
 
   <!-- Manifesto -->
   <section class="manifesto">
-    <div class="container">
+    <img src="assets/banner.png" alt="" class="manifesto-bg-img">
+    <div class="manifesto-overlay"></div>
+    <div class="container manifesto-content">
       <blockquote class="manifesto-quote" data-i18n-html="manifesto.quote">
         "We don't build robots that perform.<br>
          We build robots that <em>belong</em>."
@@ -181,19 +157,16 @@
         </div>
         <div class="join-roles">
           <div class="role-card">
-            <h3 data-i18n="join.r1.title">Industrial Designer</h3>
-            <p data-i18n="join.r1.desc">Shape the physical form of our robot. You'll define how technology feels when it enters a home.</p>
-            <span class="role-tag" data-i18n="join.hiring">Actively Hiring</span>
-          </div>
-          <div class="role-card">
-            <h3 data-i18n="join.r2.title">Product Designer</h3>
-            <p data-i18n="join.r2.desc">Help define what our robot does and how people interact with it. Bridge engineering and humanity.</p>
-            <span class="role-tag" data-i18n="join.hiring">Actively Hiring</span>
-          </div>
-          <div class="role-card">
             <h3 data-i18n="join.r3.title">AI / Robotics Engineer</h3>
-            <p data-i18n="join.r3.desc">Push the boundaries of what's possible. Make the robot see, think, and act in the real world.</p>
             <span class="role-tag" data-i18n="join.open">Open</span>
+          </div>
+          <div class="role-card">
+            <h3 data-i18n="join.r2.title">Product Manager</h3>
+            <span class="role-tag" data-i18n="join.hiring">Actively Hiring</span>
+          </div>
+          <div class="role-card">
+            <h3 data-i18n="join.r1.title">Industrial Designer</h3>
+            <span class="role-tag" data-i18n="join.hiring">Actively Hiring</span>
           </div>
         </div>
       </div>
@@ -204,17 +177,56 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-brand">
-          <img src="assets/pokelogonew.svg" alt="Poke Robot" class="logo-img footer-logo-img">
-          <p>&copy; 2026 Poke Robot. <span data-i18n="footer.rights">All rights reserved.</span></p>
-        </div>
-        <div class="footer-links">
-          <a href="#join" data-i18n="footer.careers">Careers</a>
-          <a href="mailto:hello@pokerobot.com" data-i18n="nav.contact">Contact</a>
-        </div>
+        <img src="assets/pokelogonew.svg" alt="Poke Robotics" class="footer-logo-img footer-logo-full">
+        <img src="assets/pokelogo2line.svg" alt="Poke Robotics" class="footer-logo-img footer-logo-mobile">
+        <p>&copy; 2026 Poke Robotics. <span data-i18n="footer.rights">All rights reserved.</span></p>
       </div>
     </div>
   </footer>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-overlay"></div>
+    <div class="video-modal-container">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="video-modal-content">
+        <div class="video-placeholder-modal">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          <p data-i18n="modal.videoWaiting">Video coming soon, stay tuned.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="contact-modal" id="contactModal">
+    <div class="contact-modal-overlay"></div>
+    <div class="contact-modal-container">
+      <button class="video-modal-close" id="contactModalClose" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="contact-modal-body">
+        <h3 data-i18n="contact.modalTitle">Contact Us</h3>
+        <form class="contact-modal-form" id="contactModalForm">
+          <div class="modal-form-group">
+            <label data-i18n="contact.subject">Subject</label>
+            <input type="text" id="contactSubject" required data-i18n-placeholder="contact.subjectPh">
+          </div>
+          <div class="modal-form-group">
+            <label data-i18n="contact.phone">Phone</label>
+            <input type="tel" id="contactPhone" data-i18n-placeholder="contact.phonePh">
+          </div>
+          <div class="modal-form-group">
+            <label data-i18n="contact.body">Message</label>
+            <textarea id="contactBody" rows="5" required data-i18n-placeholder="contact.bodyPh"></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit" data-i18n="contact.send">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="scripts/i18n.js"></script>
   <script src="scripts/main.js"></script>
