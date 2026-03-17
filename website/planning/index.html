@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poke Robotics — 品牌与产品策略</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/pokeicon.svg">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+
+    .planning-header {
+      padding: 120px 0 60px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .planning-header h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .planning-meta {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .planning-body {
+      padding: 60px 0 120px;
+      max-width: 780px;
+    }
+
+    .planning-body h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      margin: 56px 0 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .planning-body h3 {
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 600;
+      margin: 36px 0 12px;
+    }
+
+    .planning-body p {
+      font-size: 15.5px;
+      line-height: 1.85;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .planning-body strong {
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+
+    .planning-body em {
+      font-style: italic;
+    }
+
+    .planning-body blockquote {
+      margin: 24px 0;
+      padding: 16px 24px;
+      border-left: 3px solid #c8102e;
+      background: #fafafa;
+      border-radius: 0 8px 8px 0;
+      color: #444;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .planning-body ul, .planning-body ol {
+      margin: 12px 0 20px;
+      padding-left: 24px;
+    }
+
+    .planning-body li {
+      font-size: 15.5px;
+      line-height: 1.85;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .planning-body hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 48px 0;
+    }
+
+    .planning-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14.5px;
+    }
+
+    .planning-body th {
+      text-align: left;
+      padding: 10px 16px;
+      background: #f5f5f5;
+      border-bottom: 2px solid #e0e0e0;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .planning-body td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #eee;
+      color: #444;
+    }
+
+    .planning-body input[type="checkbox"] {
+      margin-right: 8px;
+      accent-color: #c8102e;
+    }
+
+    .planning-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 20px;
+      transition: color 0.2s;
+    }
+
+    .planning-back:hover {
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 600px) {
+      .planning-header {
+        padding: 100px 0 40px;
+      }
+
+      .planning-body {
+        padding: 40px 0 80px;
+      }
+    }
+  </style>
+</head>
+<body class="lang-zh">
+  <div class="container">
+    <div class="planning-header">
+      <a href="../" class="planning-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        返回首页
+      </a>
+      <h1>品牌与产品策略思考</h1>
+      <p class="planning-meta">更新：2026-03-14 | 作者：设计顾问</p>
+    </div>
+
+    <div class="planning-body">
+
+      <p>这份文档是我对 Poke Robotics 品牌、产品和对外表达的系统性思考。目的是把想法理清楚，和创始人对齐，然后再拆解成可执行的任务。</p>
+
+      <hr>
+
+      <h2>一、我怎么理解这家公司</h2>
+
+      <p>Poke Robotics 现在的状态是：一群工程师想做一件改变世界的事，但还没有找到那个"一句话让所有人明白你在做什么"的表达。</p>
+
+      <p>三条主线（AI、产品、生态/PR）是内部组织逻辑，但对外面的人——用户、媒体、投资人、未来的候选人——他们只想知道一个问题：<strong>你们做的东西，跟我有什么关系？</strong></p>
+
+      <p>我的判断是：这家公司的核心故事不是"我们技术多强"，而是 <strong>"我们要让机器人真正走进你家"</strong>。这个故事的力量在于它非常直觉、非常情感化，而且市面上没有人真的做到了。</p>
+
+      <hr>
+
+      <h2>二、产品的本质——为什么必须像人</h2>
+
+      <p>创始人说了一句很精准的话：<strong>如果一个机器人需要长得像生物，它一定有特定的情绪意义，不然完全可以是机器的外形。</strong></p>
+
+      <p>这句话其实定义了产品哲学的根基。我展开来说：</p>
+
+      <h3>扫地机器人解决的是问题，Poke 解决的是关系</h3>
+
+      <p>扫地机器人是工具。它的价值公式很简单：省时间 = 有用。所以它长得像个冰球没关系，你不需要跟它有情感连接。</p>
+
+      <p>但 Poke 要做的事情不一样。一个在家里走来走去、帮你干活的类人型机器人，用户天然会用"相处"的心态去面对它——它不是一个放在角落充电的设备，它是一个会出现在你视野里的<strong>存在</strong>。</p>
+
+      <p>这就意味着：</p>
+      <ul>
+        <li><strong>外观</strong>不是工业设计问题，是<strong>心理预期管理</strong>。类人外形给用户的隐性承诺是"我可以像对人一样对你"。</li>
+        <li><strong>人格模拟</strong>不是花哨功能，是<strong>使用体验的底层架构</strong>。如果它长得像人但行为像机器，反而会让人不舒服（恐怖谷效应的另一面）。</li>
+        <li><strong>能干活</strong>是最基本的尊重。如果它长得像人却什么都不会做，那就是一个昂贵的表演道具。</li>
+      </ul>
+
+      <h3>iPhone 时刻的真正含义</h3>
+
+      <p>创始人说要做<strong>机器人行业的 iPhone 时刻</strong>。iPhone 成功不是因为它是最好的手机，而是因为它第一次让普通人觉得"这个东西我必须拥有"。</p>
+
+      <p>对 Poke 来说，iPhone 时刻 = <strong>从"哇，好酷"到"我家需要一个"的跨越</strong>。</p>
+
+      <p>这个跨越要靠三件事：</p>
+      <ol>
+        <li><strong>有用</strong>（不是表演，是真的能完成具体任务）</li>
+        <li><strong>不吓人</strong>（亲切、温暖、可预期）</li>
+        <li><strong>买得起</strong>（千家万户 = 大众价格）</li>
+      </ol>
+
+      <hr>
+
+      <h2>三、品牌表达——对外怎么说</h2>
+
+      <h3>核心 Tagline（已落地）</h3>
+
+      <p>网站目前使用的核心表达：</p>
+
+      <table>
+        <thead>
+          <tr><th>语言</th><th>Tagline</th><th>使用位置</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>中文</td><td><strong>是家人，而非机器</strong></td><td>官网首屏 Hero</td></tr>
+          <tr><td>英文</td><td><strong>Family, not a machine.</strong></td><td>官网首屏 Hero（英文版）</td></tr>
+          <tr><td>中文</td><td>「我们不制造表演机器，我们创造属于你的家庭机器人。」</td><td>Manifesto 区域</td></tr>
+          <tr><td>英文</td><td>"We don't build performing machines. We build home robots that belong to you."</td><td>Manifesto 区域</td></tr>
+        </tbody>
+      </table>
+
+      <h3>三条产品哲学</h3>
+
+      <p>我把产品的核心belief提炼成三句话，每句话对应一个设计决策的"为什么"：</p>
+
+      <p><strong>01 — 形态即态度（Form is intention）</strong></p>
+      <blockquote>选择类人外形不是为了炫技，而是因为家需要一个"人"——不是一台机器。如果它长得像生物，那它就承载了情绪意义。</blockquote>
+
+      <p><strong>02 — 能力即尊重（Utility is respect）</strong></p>
+      <blockquote>能干活，是对用户时间的尊重。不表演，是对用户智商的尊重。</blockquote>
+
+      <p><strong>03 — 人格即连接（Personality is connection）</strong></p>
+      <blockquote>模拟人格不是欺骗，是让人与机器人之间的相处自然发生。温暖不是一个功能，是一个设计原则。</blockquote>
+
+      <h3>Brand Manifesto（已落地）</h3>
+
+      <blockquote>「我们不制造表演机器，我们创造<em>属于你的</em>家庭机器人。」<br>"We don't build performing machines. We build home robots that <em>belong to you</em>."</blockquote>
+
+      <p>这句话的力量在于 perform vs belong 的对比——perform 暗示那些翻跟头、跳舞的表演机器人；belong 暗示"家庭成员"。一句话就把 Poke 和所有竞品拉开了距离。</p>
+
+      <hr>
+
+      <h2>四、创始人 IP 的思路</h2>
+
+      <p>创始人的个人 IP 要和公司深度绑定，但视觉上要更亲切、更有朋友感。</p>
+
+      <p>我的思路是：<strong>公司品牌是"理想"，创始人 IP 是"过程"。</strong></p>
+
+      <ul>
+        <li>公司品牌讲的是"我们要做什么" — 宏大、有信念感、质感偏高</li>
+        <li>创始人 IP 讲的是"我们怎么做的" — 真实、有烟火气、Build in Public</li>
+      </ul>
+
+      <p>两者不矛盾，反而互补：看了公司品牌觉得"这个目标好大"，看了创始人日常觉得"这些人真的在一步步做"。</p>
+
+      <p>内容形式建议：</p>
+      <ul>
+        <li><strong>播客</strong>：技术思考 + 创业故事，偏深度</li>
+        <li><strong>短视频/vlog</strong>：办公室日常、机器人调试过程，偏轻松</li>
+        <li><strong>年度总结</strong>：Build in Public 的标志性内容格式</li>
+        <li><strong>视觉风格</strong>：和公司主品牌共用色系，但更手绘/更有温度，比如手写字体、随手拍质感</li>
+      </ul>
+
+      <hr>
+
+      <h2>五、Logo Reimagine</h2>
+
+      <p>公司名正式确认为 <strong>Poke Robotics</strong>，Logo 体系已完成重新设计，当前包含三个版本：</p>
+
+      <h3>Logo 资产</h3>
+
+      <table>
+        <thead>
+          <tr><th>版本</th><th>文件</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>全称横排</td><td><code>pokelogonew.svg</code></td><td>桌面端导航、品牌物料</td></tr>
+          <tr><td>两行紧凑</td><td><code>pokelogo2line.svg</code></td><td>移动端导航、小空间</td></tr>
+          <tr><td>图标</td><td><code>pokeicon.svg</code></td><td>Favicon、App图标、社媒头像</td></tr>
+        </tbody>
+      </table>
+
+      <div style="display: flex; flex-direction: column; gap: 32px; align-items: center; padding: 40px 0; background: #fafafa; border-radius: 12px; margin: 24px 0;">
+        <img src="../assets/pokelogonew.svg" alt="Full Logo" style="height: 36px; filter: invert(10%) sepia(90%) saturate(6000%) hue-rotate(350deg) brightness(70%) contrast(115%);">
+        <img src="../assets/pokelogo2line.svg" alt="2-Line Logo" style="height: 48px; filter: invert(10%) sepia(90%) saturate(6000%) hue-rotate(350deg) brightness(70%) contrast(115%);">
+        <img src="../assets/pokeicon.svg" alt="Icon" style="height: 48px; filter: invert(10%) sepia(90%) saturate(6000%) hue-rotate(350deg) brightness(70%) contrast(115%);">
+      </div>
+
+      <h3>设计原则</h3>
+
+      <ol>
+        <li><strong>简洁可辨</strong>：Logo 需要在各种小尺寸场景（favicon、社媒头像、水印）清晰可辨，摒弃了之前过于繁琐的版本。</li>
+        <li><strong>品牌红 <code>#c8102e</code></strong>：主题色用于 Logo 在白色/浅色背景上的呈现（如滚动后的导航栏）。红色使用克制，仅在关键品牌触点出现。</li>
+        <li><strong>反白适配</strong>：在深色/图片背景上（如首屏 Hero），Logo 使用纯白版本，通过 CSS filter 实现。</li>
+        <li><strong>多版本策略</strong>：横排全称用于正式场景和桌面端；两行紧凑版用于移动端和空间受限场景；图标版用于最小识别单元。</li>
+      </ol>
+
+      <h3>应用场景</h3>
+
+      <ul>
+        <li>🖥 <strong>桌面端导航</strong>：全称横排白色，滚动后变为品牌红</li>
+        <li>📱 <strong>移动端导航</strong>：两行紧凑白色，滚动后变为品牌红</li>
+        <li>🌐 <strong>Favicon</strong>：图标版（pokeicon.svg）</li>
+        <li>📄 <strong>页脚</strong>：桌面端全称横排黑色，移动端两行紧凑版黑色</li>
+      </ul>
+
+      <hr>
+
+      <h2>六、对工业设计的初步想法</h2>
+
+      <p>还没招到工业设计师，但有几个方向我觉得值得提前对齐：</p>
+
+      <ol>
+        <li><strong>不要"科幻感"</strong>：走进千家万户的东西不能让人觉得"这是个实验品"。参考路径：Dyson 不是科幻感，是"高级家电感"。</li>
+        <li><strong>材质要有温度</strong>：金属 + 硬塑料 = 冷冰冰。可以考虑织物包裹、圆润曲线、哑光质感。</li>
+        <li><strong>尺度感很重要</strong>：太大会有压迫感，太小会觉得像玩具。需要找到"家庭成员"的合适体量。</li>
+        <li><strong>面部/头部是关键</strong>：这是用户建立情感连接的第一触点。不需要高仿真人脸，但需要一个可以让人"读出表情"的界面。</li>
+      </ol>
+
+      <hr>
+
+      <h2>七、办公空间的想法</h2>
+
+      <p>居家风格的办公室，同时兼顾机器人调试场景——这其实本身就是一个很好的品牌叙事素材。</p>
+
+      <p>建议：</p>
+      <ul>
+        <li>软装调性和品牌视觉保持一致（暖色调、自然材质、有生活感）</li>
+        <li>留出"可拍摄区域"：办公室本身就是内容场景（Build in Public 的背景、PR短片取景）</li>
+        <li>机器人调试区自然融入生活场景，而不是单独一个"实验室" — 这本身就在说"我们的机器人属于家"</li>
+      </ul>
+
+      <hr>
+
+      <h2>八、现阶段的优先级判断</h2>
+
+      <h3>已完成 ✅</h3>
+      <ul>
+        <li>Landing page 已上线（中英双语，响应式设计，移动端适配）</li>
+        <li>Logo 体系完成（全称、两行、图标三个版本）</li>
+        <li>核心价值已对齐落地到网站</li>
+        <li>公司名确认为 Poke Robotics</li>
+        <li>网站配色方案确定（高级中性色系 + 克制的品牌红 <code>#c8102e</code>）</li>
+      </ul>
+
+      <h3>紧急且重要</h3>
+      <ul>
+        <li>配合短片发布优化视频 Modal 内容</li>
+        <li>网站域名绑定 &amp; 正式部署</li>
+      </ul>
+
+      <h3>重要不紧急</h3>
+      <ul>
+        <li>完整官网搭建（4月后）</li>
+        <li>创始人 IP 视觉体系设计</li>
+        <li>工业设计方向指引（等设计师到位）</li>
+        <li>公众号内容规划</li>
+      </ul>
+
+      <h3>需要创始人决策</h3>
+      <ul>
+        <li>网站域名 &amp; 邮箱</li>
+        <li>PR 短片确切发布日期</li>
+        <li>联系邮箱是否从 hello@pokerobot.com 更新</li>
+      </ul>
+
+      <hr>
+
+      <h2>Todos</h2>
+
+      <h3>本周（3/17 — 3/21）</h3>
+      <ul>
+        <li><input type="checkbox" checked disabled> 和创始人过一次这份文档，对齐核心价值和品牌表达</li>
+        <li><input type="checkbox" checked disabled> Landing page 视觉调整（根据反馈）</li>
+        <li><input type="checkbox" checked disabled> Logo 新版本设计完成</li>
+        <li><input type="checkbox" disabled> 确认域名和部署方案</li>
+      </ul>
+
+      <h3>短片发布前（→ 4/4）</h3>
+      <ul>
+        <li><input type="checkbox" checked disabled> Landing page 正式上线</li>
+        <li><input type="checkbox" checked disabled> Logo 定稿</li>
+        <li><input type="checkbox" disabled> 视频 Modal 内嵌实际短片</li>
+        <li><input type="checkbox" disabled> 公众号注册 &amp; 基础配置</li>
+      </ul>
+
+      <h3>4月后</h3>
+      <ul>
+        <li><input type="checkbox" disabled> 完整官网规划 &amp; 搭建</li>
+        <li><input type="checkbox" disabled> 创始人 IP 视觉体系</li>
+        <li><input type="checkbox" disabled> 工业设计 brief（配合设计师入职）</li>
+        <li><input type="checkbox" disabled> 办公空间软装方向把控</li>
+      </ul>
+
+    </div>
+  </div>
+</body>
+</html>
