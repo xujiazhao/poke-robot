@@ -1204,8 +1204,15 @@ img {
 }
 
 /* ---- Chinese Font ---- */
+@font-face {
+  font-family: 'AlimamaFangYuanTiVF';
+  src: url('https://cdn.jsdelivr.net/npm/@fontpkg/alimama-fang-yuan-ti-vf@1.0.5/AlimamaFangYuanTiVF-Thin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 body.lang-zh {
-  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-family: 'AlimamaFangYuanTiVF', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 
 body.lang-zh .hero-title,
@@ -1215,7 +1222,7 @@ body.lang-zh .value-title,
 body.lang-zh .manifesto-quote,
 body.lang-zh .role-card h3,
 body.lang-zh .logo-text {
-  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-family: 'AlimamaFangYuanTiVF', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 
 body.lang-zh .hero-title {
